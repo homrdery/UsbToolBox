@@ -9,7 +9,7 @@ class Parser(OptionParser):
     def parse_args(self):
 
         self.add_option("-v", action="count", dest="verbose", help="verbose", default=False)
-        self.add_option("-s", action="store_true", dest="search", help="search for tag minimum 3 args", default=False)
+        self.add_option("-s", action="store_true", dest="search", help="search for new usb connection", default=True)
 
         self.options, self.args = super().parse_args()
 
